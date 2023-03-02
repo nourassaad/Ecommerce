@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn/SignUp</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="about-container">
+        <img src="../imgs/logo.png" width="100px" height="50px">
+        <div class="login">
+            <div class="buttonBox">
+                <div id="btn"></div>
+                <button type="button" class="toggleBtn" onclick="signin()">Sign In</button>
+                <button type="button" class="toggleBtn" onclick="signup()">Sign Up</button>
+            </div>
+            <form action="../cart.html" id="signin" class="inputGroup" method="post">
+                <input type="text" class="inpField" id="email" name="email" placeholder="Email">
+                <input type="password" class="inpField" id="pass" name="password" placeholder="Password">
+                <p><a href="">Forgot your password?</a></p>
+                <button type="submit" class="submitBtn">Sign In</button>
+            </form>
+            <form action="../cart.html" id="signup" class="inputGroup" method="post">
+                <input type="text" class="inpField" name="fullName" placeholder="Full Name">
+                <input type="text" class="inpField" placeholder="Email">
+                <input type="password" class="inpField" name="password" placeholder="Password">
+                <button type="submit" class="submitBtn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
